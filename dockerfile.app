@@ -8,5 +8,4 @@ RUN apk add nginx
 RUN apk add --update npm
 RUN npm i -g @angular/cli
 
-
 ENTRYPOINT nginx -g 'daemon off;'

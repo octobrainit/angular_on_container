@@ -5,5 +5,6 @@
 ```
 docker-compose up -d --build 
 docker exec -it app_angular bash
+cd src
 ```
 Now you are in the container, enjoy your project

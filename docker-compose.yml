@@ -13,9 +13,12 @@ services:
   app: 
     build:
       context: .
+      dockerfile: dockerfile.app
     command: bash npm i 
     container_name: app_angular
     networks:
       - development-network
+    ports:
+      - "4200:4200"
     volumes:
       - my_code:/app/
